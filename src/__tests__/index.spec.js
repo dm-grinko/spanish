@@ -13,7 +13,7 @@ describe('getPhrase function', () => {
 });
 
 
-describe('getPhrase function', () => {
+describe('getPhrase arst function', () => {
     test('vosotros, tomar => vosotros tomais', () => {
         expect(getPhrase('vosotros', 'tomar')).toEqual('vosotros tomais');
     });
