@@ -1,0 +1,1 @@
+module.exports.add = (a: number, b: number): number => a + b;
