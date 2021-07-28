@@ -1,8 +1,13 @@
-const { add } = require('../../dist');
+const { getPhrase } = require('../../dist');
 
-describe('add function', () => {
-  test('1 + 2 == 3', () => {
-    expect(add(1, 2)).toEqual(3);
-  });
+describe('getPhrase function', () => {
+    test('yo, tomar => yo tomo', () => {
+        expect(getPhrase('yo', 'tomar')).toEqual('yo tomo');
+    });
 });
 
+describe('getPhrase function', () => {
+    test('vosotros, tomar => vosotros tomais', () => {
+        expect(getPhrase('vosotros', 'tomar')).toEqual('vosotros tomais');
+    });
+});
