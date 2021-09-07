@@ -11,3 +11,9 @@ describe('getPhrase function', () => {
         expect(getPhrase('vosotros', 'tomar')).toEqual('vosotros tomais');
     });
 });
+
+describe('getPhrase function', () => {
+    test('vosotros, tomar => vosotros tomais', () => {
+        expect(getPhrase('vosotros', 'tomar')).toEqual('vosotros tomais');
+    });
+});
